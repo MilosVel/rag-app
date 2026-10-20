@@ -86,7 +86,11 @@ async def rag_query_pdf_ai(ctx: inngest.Context):
                 "Content-Type": "application/json",
             },
             json={
-                "model": "llama-3.1-8b-instant",
+                # "model": "llama-3.1-8b-instant", // does not works anymore
+                 "model": "openai/gpt-oss-20b",
+                #  "model": "openai/gpt-oss-120b",
+                #  "model": "qwen/qwen3.8-27b",
+                # All available models: GET https://api.groq.com/openai/v1/models.
                 "messages": [
                     {
                         "role": "system",
