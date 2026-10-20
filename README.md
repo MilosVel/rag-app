@@ -1,6 +1,6 @@
 1. OPENAI_API_KEY or GROQ_API_KEY in .env (we have code for both versions in main.py, data_loader.py and vector_db.py) (Current code version is with GROK_API_KEY, link: https://console.groq.com/keys)
 
-2. uv run uvicorn main:app --reload
+2. uv run uvicorn main:app --reload ili uv run python -m uvicorn main:app --reload
 
 3. npx inngest-cli@latest dev -u http://127.0.0.1:8000/api/inngest --no-discovery
 
